@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>.:Manoel Martins:.</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://kit.fontawesome.com/54cda4f946.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,400;1,600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="http://github.com/manoelmartins1980.png" alt="">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="http://github.com/manoelmartins1980">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="http://wa.me/5527999997345">whatsapp</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:manoel.junior@manoelmartins.com.br">Email</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Manoel Martins</h1>
+                <h5>Front-end</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    My first Project by Gama Academy!
+                    The goal is to build a responsible page with animation and design whish can be open in computer browser or smartphone.
+                    As you can see, it worked! ;)
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor e-mail :)">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
