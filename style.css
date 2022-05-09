@@ -40,7 +40,7 @@ header div img {
 }
 
 header ul {
-    display: flex;
+    display: flex; 
 }
 
 header ul li {
